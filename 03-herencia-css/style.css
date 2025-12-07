@@ -2,10 +2,6 @@
   background-color: blueviolet !important;
 }
 
-h2 {
-  background-color: chartreuse;
-}
-
 #unicoBox {
   background-color: aquamarine;
 }
@@ -120,4 +116,149 @@ h2 {
   right: 10%;
   width: 220px;
   height: 25px;
+}
+
+/* ========================= */
+/* CONTENEDOR PRINCIPAL */
+/* ========================= */
+
+.contenedor-juegos {
+    width: 90%;
+    min-height: 10vh;
+    padding: 30px;
+    background-color: beige;
+    text-align: center;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
+    margin: 30px;
+}
+
+
+/* ========================= */
+/* CONTENEDOR TARJETA PRINCIPAL */
+/* ========================= */
+
+.juego {
+    display: inline-block;
+    position: relative;
+    width: 400px;
+    min-width: 400px;
+    height: 400px;
+    overflow: hidden;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
+    margin: 20px;
+}
+
+
+/* ========================= */
+/* IMAGEN PRINCIPAL */
+/* ========================= */
+
+.hero-imagen {
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/* ========================= */
+/* FONDO DE COLOR INCLINADO */
+/* ========================= */
+
+.hero-fondo {
+    background-image: linear-gradient(0deg, #00157b, #52b4df);
+    border-radius: 30px;
+    position: absolute;
+    top: 55%;
+    left: -5px;
+    height: 65%;
+    width: 108%;
+}
+
+/* Color diferente para la tarjeta 2 */
+.tarjeta-2 .hero-fondo {
+    background-image: linear-gradient(-20deg, #044307, #12a614);
+}
+
+/* Color diferente para la tarjeta 3 */
+.tarjeta-3 .hero-fondo {
+    background-image: linear-gradient(-20deg, #5c0707, #c63131);
+}
+
+
+/* ========================= */
+/* LOGO */
+/* ========================= */
+
+.hero-logo {
+    height: 80px;
+    width: 80px;
+    border-radius: 20px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 40%;
+    left: 160px;
+    overflow: hidden;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.7);
+}
+
+.hero-logo img {
+    height: 100%;
+}
+
+
+/* ========================= */
+/* DESCRIPCIÓN */
+/* ========================= */
+
+.hero-descripcion {
+    position: absolute;
+    color: #fff;
+    font-weight: 900;
+    left: 10px;
+    bottom:16%;
+}
+
+
+/* ========================= */
+/* BOTÓN */
+/* ========================= */
+
+.hero-boton {
+    position: absolute;
+    color: #fff;
+    right: 150px;
+    bottom: 5%;
+    padding: 10px 20px;
+    border: 1px solid #fff;
+}
+
+.hero-boton a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* ========================= */
+/* FECHA */
+/* ========================= */
+
+.hero-fecha {
+    position: absolute;
+    color: #fff;
+    left: 130px;
+    bottom: 28%;
+}
+
+
+/* ========================= */
+/* ESTILO GENERAL */
+/* ========================= */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    background-color: #eee;
+    min-height: 100vh;
+    text-align: center;
 }
