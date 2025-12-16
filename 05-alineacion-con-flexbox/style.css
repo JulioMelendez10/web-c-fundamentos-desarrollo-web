@@ -1,0 +1,308 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* Clon de Starbucks */
+header{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #bdbdbd;
+    margin-bottom: 10px;
+
+    /* TIPOGRAFÍA SUAVE Y ESTÉTICA */
+    font-family: 'Sodo Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    letter-spacing: 1px;        /* Espaciado elegante entre letras */
+    font-size: 0.9rem;  
+}
+
+.logo img{
+    margin-right: 50px;
+}
+
+.container{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1300px;
+}
+
+.header-left{
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+nav{
+  display: flex;
+  gap: 35px;
+}
+
+.header-left nav a{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    transition-duration: .8s;
+
+    
+}
+.header-left nav a:hover{
+  color: #00754a;
+}
+
+.header-right{
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+}
+
+.locacion a{
+  text-decoration: none;
+  color: black;
+  transition-duration: .8s;
+}
+.locacion a:hover{
+  color: #00754a;
+}
+
+.btn-registro{
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+.btn-iniciar{
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: 1px solid #000;
+  background-color: #fff;
+  color: #000000;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Estilos del card  promocional*/
+
+#userCard.card {
+    margin-top: 35px;     /* Separa la tarjeta del header */
+    /* padding: 30px; */
+}
+
+img{display: flex;}
+
+.card{
+    display: flex;
+    background-color: #025738;
+    border-radius: 10px;
+    width: 1000px;
+    height: 380px;
+    margin: auto;
+    overflow: hidden;
+    }
+.card-content{
+    color: white;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 5px;
+    gap: 30px;
+}
+.card-content h2{
+    font-size: 2.2rem;
+    padding-right: 150px;
+    padding-left: 30px;
+}
+.card-content button{
+    padding: 10px 20px;
+    width: 200px;            /* Ancho fijo corto */
+    border-radius: 25px;
+    border: 1px solid #ffffff;
+    background-color: #fff;
+    color: #000000;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;      /* Centra texto dentro del ancho fijo */
+    margin: 0 0 0 30px; /* Margen superior e izquierdo */
+}
+
+.card-image {
+    flex: 1;                          /* Ocupa 50% DERECHA */
+    position: relative;               /* Para posicionamiento absoluto de img */
+    overflow: hidden;                 /* Evita desbordes */
+}
+
+.card-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;                /* Cubre TODO el espacio verde */
+    border-radius: 0 10px 10px 0;     /* Solo redondea lado derecho */
+}
+
+/* Estilos de la promoción de café */
+
+.card-prom {
+    display: flex;
+    flex-direction: column;           /* ALINEA VERTICAMENTE */
+    justify-content: flex-start;      /* Todo junto arriba */
+    background-color: #ffffff;
+    border-radius: 20px;
+    width: 1100px;
+    min-height: 400px;                /* Altura mínima, pero se expande */
+    margin: 50px auto;
+    padding: 20px;
+    gap: 0px;                        /* Espacio mínimo entre elementos */
+}
+
+
+.card-prom h2 {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #000000;                   /* Verde Starbucks */
+    text-align: center;
+    flex-shrink: 0;                   /* h1 no se encoge, queda arriba fijo */
+}
+
+.card-horzontal {
+    display: flex;
+    gap: 10px;
+    align-items: stretch;             /* NUEVO: Todas cards MISMA ALTURA (la del texto más largo) */
+}
+
+.card-prom-1 {
+    display: flex;                    /* Layout HORIZONTAL: imagen izquierda, texto derecha */
+    flex: 1;
+    background-color: white;
+    border-radius: 15px;
+    padding: 25px;
+    align-items: flex-start;
+    align-self: stretch;              /* NUEVO: Se estira para igualar altura hermana más alta */
+}
+
+.card-prom-1 img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+    margin-right: 20px;
+    align-self: flex-start;           /* Imagen queda arriba alineada */
+}
+
+.text-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.text-card h4 {
+    font-size: 1.0rem;
+    font-weight: 600;
+    color: #333;
+    margin: 0 0 10px 0;
+    line-height: 1.3;
+}
+
+.text-card p {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0;
+    line-height: 1.6;
+}
+
+
+.card-but {
+    display: flex;
+    justify-content: center;          /* Centra botones horizontalmente */
+    gap: 30px;                        /* Espacio entre botones */
+}
+
+.btn-regis, .btn-ini {
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+.btn-regis {
+    background-color: #00754a;        /* Verde Starbucks sólido */
+    color: white;
+}
+
+.btn-ini {
+    background-color: transparent;
+    color: #00754a;
+    border: 2px solid #00754a;
+}
+
+.btn-regis:hover, .btn-ini:hover {
+    box-shadow: 0 5px 15px rgba(0,117,74,0.3);
+}
+
+
+
+/* Práctica conceptos */
+
+.contenedor-flexible {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start;
+  flex-wrap: nowrap;
+  gap: 10px;
+
+  background-color: blueviolet;
+  border: 2px solid black;
+  width: 600px;
+  height: 500px;
+  color: white;
+}
+
+.boxy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* width: 50%; */
+  height: 80px;
+  background-color: orange;
+  border: 2px solid black;
+  font-size: 1.5rem;
+}
+
+.pato {
+  align-self: auto;
+  width: 50px;
+  width: 40%;
+}
+.foca {
+  align-self: auto;
+  width: 40%;
+  flex-shrink: 4;
+}
+/* .perro {
+  align-self: auto;
+  flex-grow: 1;
+} */
+.vaca {
+  align-self: auto;
+  width: 40%;
+}
